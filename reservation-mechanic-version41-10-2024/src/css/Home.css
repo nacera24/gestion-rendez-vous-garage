@@ -1,0 +1,111 @@
+/* Style de la section d'introduction */
+.home-header {
+    background-image: url('../Images/acceuilImage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .home-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; 
+  }
+  
+  /* Texte et boutons  */
+  .home-header h1,
+  .home-header p,
+  .home-header button {
+    z-index: 10;  
+    position: relative;
+  }
+  
+  /* Style du texte du logo */
+  .logo-text {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 15px;
+    font-weight: 600;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Style du titre principal */
+  .header-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Style du paragraphe d'introduction */
+  .header-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  /* Style du bouton d'appel à l'action */
+  .cta-button {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    background-color: #007bff; 
+    border: none;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3; 
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Style de la section des services */
+  .services-section {
+    margin-top: 50px;
+    padding: 50px 0;
+    background-color: #f8f9fa; 
+  }
+  
+  /* Style du titre de la section des services */
+  .services-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Style du paragraphe des services */
+  .services-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  /* Bouton de la section services */
+  button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    background-color: #6c757d; 
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #5a6268;
+    transition: background-color 0.3s ease;
+  }

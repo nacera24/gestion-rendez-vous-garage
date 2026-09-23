@@ -1,0 +1,48 @@
+.client-profile-header {
+    background-image: url('../Images/profileclient.png');
+    background-size: cover;
+    background-position: top center; /* Focus sur le haut et le centre */
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.client-profile-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Autres styles inchangés */
+.client-profile-header h1,
+.client-profile-header p {
+    z-index: 10;  
+    position: relative;
+}
+
+.client-header-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.client-header-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.6;
+}
